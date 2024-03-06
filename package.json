@@ -1,26 +1,43 @@
 {
-  "name": "@aws-crypto/ie11-detection",
-  "version": "2.0.2",
-  "description": "Provides functions and types for detecting if the host environment is IE11",
-  "scripts": {
-    "pretest": "tsc -p tsconfig.json",
-    "test": "mocha --require ts-node/register test/**/*test.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:aws/aws-sdk-js-crypto-helpers.git"
-  },
-  "author": {
-    "name": "AWS Crypto Tools Team",
-    "email": "aws-cryptools@amazon.com",
-    "url": "https://docs.aws.amazon.com/aws-crypto-tools/index.html?id=docs_gateway#lang/en_us"
-  },
-  "homepage": "https://github.com/aws/aws-sdk-js-crypto-helpers/tree/master/packages/ie11-detection",
-  "license": "Apache-2.0",
-  "main": "./build/index.js",
-  "types": "./build/index.d.ts",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "tslib": "^1.11.1"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-lottie": "^1.2.3",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.1",
+    "react-transition-group": "^4.4.5",
+    "web-vitals": "^2.1.4"
   },
-  "gitHead": "5d1db32bb75010cbe38ff8dda9c560cdbb7ec578"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
