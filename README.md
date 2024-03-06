@@ -1,8 +1,20 @@
-This project report describes the development of an investment and startup website
-that aims to connect startups with potential investors. The website includes a database
-of startups and investors , feedback to the developers and various features to facilitate
-communication between the two groups. The website was built using modern web development technologies such as HTML, CSS, JavaScript, ReactJs and NodeJs . The website was designed to be responsive and
-accessible across different devices, with a clean and modern user interface. The project involved several phases, including requirements gathering, design, development, testing, and deployment. The development team followed an agile
-development methodology to ensure timely delivery and continuous improvement. The final website meets the project objectives and provides a platform for startups to
-showcase their ideas and connect with potential investors . The project report concludes
-with a discussion of the lessons learned and recommendations for future improvements.
+# @aws-crypto/ie11-detection
+
+Functions for interact with IE11 browsers Crypto. The IE11 `window.subtle` functions are unique.
+This library is used to identify an IE11 `window` and then offering types for crypto functions.
+For example see @aws-crypto/random-source-browser
+
+## Usage
+
+```
+import {isMsWindow} from '@aws-crypto/ie11-detection'
+
+if (isMsWindow(window)) {
+  // use `window.subtle.mscrypto`
+}
+
+```
+
+## Test
+
+`npm test`
